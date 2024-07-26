@@ -1,0 +1,51 @@
+Bài toán dự đoán khả năng rời bỏ của khách hàng -> recall
+
+SVC: YES recall: 0.44, f1: 0.53
+LogisticRegression: 0.53,  0.57 win
+RandomForest 0.45, 0.51
+
+naive under/oversample:
+undersample with RandomForest: 0.77, 0.61
+undersample with LogisticRegression:  0.82   0.63 win
+undersample with SVC :  0.80      0.62
+
+oversample with RandomForest: 0.55   0.54
+oversample with LogisticRegression: 0.82  0.64  win
+oversample with SVC:     0.79   0.63
+
+SMOTE:
+RandomForest: 0.57      0.56
+LogictisRegression: 0.79   0.62  win
+SVC: 0.77  0.62
+
+ADASYN:
+RDF: 0.59      0.56
+LogisticRegression: 0.87      0.62 win
+SVC: 0.86      0.61
+
+BorderlineSMOTE:
+RDF:  0.57      0.56
+LogisticRegression:  0.88      0.62 WIN
+SVC: 0.87      0.61
+
+SVMSMOTE:
+RDF: 0.57      0.55
+LogisticRegression: 0.81      0.63 win
+svc: 0.78      0.62
+
+KMeansSMOTE:
+RDF: 0.52      0.55
+LogisticRegression:  0.67      0.62 win
+SVC: 0.53      0.56
+
+SMOTETomek:
+RDF: 0.59      0.58
+LogisticRegression: 0.79      0.62 win
+SVC: 0.76      0.62
+
+SMOTEENN:
+RDF: 0.81   0.63
+LogisticRegression: 0.79   0.62
+SVC: 0.86   0.62         Win
+
+
